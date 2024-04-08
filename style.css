@@ -1,12 +1,9 @@
 *{
     background-color: darkgray;
-    font: white;
+    color: white;
+    font-family: Helvetica;
 }
 
 .intro {
     width: 50%;
-}
-
-p {
-    width: 200px;
 }
