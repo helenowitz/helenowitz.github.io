@@ -1,0 +1,12 @@
+.sections-box {
+    box-size: border-box;
+    border: solid 2px;
+}
+
+.sections-header {
+}
+
+.burgundy-box {
+    background-color: #921C33;
+    color: #F9C800;
+}
