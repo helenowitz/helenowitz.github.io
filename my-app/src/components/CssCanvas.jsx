@@ -1,13 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 
 function CssCanvas({cssMenuData}){
-    console.log('CssCanvas cssMenuData: ', cssMenuData)
-
-    const [styleData, setStyleData] = useState({displayType: 'flex', rowsColumns:{gridColumn: 3, gridRow: 'auto'}})
-    const canvasStyle = {
-        display: styleData.displayType, gridTemplateColumns: styleData.rowsColumns.gridColumn, gridTemplateRows: styleData.rowsColumns.gridRow
+    let canvasStyle = {
+        display: cssMenuData.displayType, gridTemplateColumns: cssMenuData.rowsColumns.gridColumn, gridTemplateRows: cssMenuData.rowsColumns.gridRow
     }
-
     console.log("canvas:", canvasStyle);
 
     return (

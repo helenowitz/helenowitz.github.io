@@ -3,9 +3,9 @@ import GridOptions from "./modules/GridOptions.jsx";
 
 // 
 
-function CssMenu({cssMenuData4Canvas}) {
+function CssMenu({menuData4Canvas}) {
     // STATES DEFINITION
-    const [displayTypeState, setDisplayType] = useState("flex");
+    const [displayType, setDisplayType] = useState("flex");
     const [gridVisibility, setGridVisibility] = useState({display: "none"});
     const [rowsColumns, setRowsColumns] = useState({gridRow: 1, gridColumn: 5})
     
@@ -24,8 +24,8 @@ function CssMenu({cssMenuData4Canvas}) {
         (cssJson.canvasDisplay === "grid") ? setGridVisibility({display: "inherit"}) : setGridVisibility({display: "none"});
         setRowsColumns({gridRow: cssJson.gridRows, gridColumn: cssJson.gridColumns})
 
-        const dataToSendCanvas = {displayTypeState, rowsColumns};
-        cssMenuData4Canvas(dataToSendCanvas);
+        const dataToSendCanvas = {displayType, rowsColumns};
+        menuData4Canvas(dataToSendCanvas);
     }
 
     return (
