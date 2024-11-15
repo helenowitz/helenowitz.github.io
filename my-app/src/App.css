@@ -1,0 +1,32 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "TopHeader TopHeader""CssMenu CssCanvas""Explanation Explanation";
+  gap: 5%;
+  .TopHeader {
+    background-color: aqua;
+  }
+  .Explanation {
+    background-color: rgba(250, 250, 33, .3);
+  }
+  .CssPlayspace {
+    background-color: rgba(218, 165, 32, .3);
+    display: grid;
+    .boxes {
+      border: solid 1px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .CssMenu {
+    border: dotted 2px;
+    
+  }
+  .CssCanvas {
+    border: solid 4px;
+    background-color: rgba(138, 43, 226, .2);
+    
+  }
+}
+
