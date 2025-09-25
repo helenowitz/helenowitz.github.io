@@ -1,0 +1,10 @@
+.TopHeader {
+    text-align: center;
+    color: brown;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    #used-for-space {
+        width: 100px;
+    }
+}
